@@ -142,31 +142,3 @@ def quick_sort(lst):
 if __name__ == '__main__':
     import doctest
     doctest.testmod()
-
-'''
----------------------------------------------------------------------------------------------------
-    	        #    10	   |	      100	     |       1,000	     |	     10,000         
------------------------------------------------------|---------------------------------------------
-Bubble Sort	# 0   0	 0 | 0.002   0.002   0.004   | 0.17   0.32    0.43   | 18.00   33     47     
-Selection sort	# 0   0	 0 | 0.001   0.001   0.002   | 0.11   0.15    0.12   | 10.30   10.8   11.4   
-insertion sort	# 0   0	 0 | 0.002   0.003   0.004   | 0.198  0.30    0.411  | 20.1    30.2   44.7   
-Merge sort	# 0   0	 0 | 0.001   0.002   0.001   | 0.013  0.017   0.014  | 0.144   0.188  0.142  
-Quick sort	# 0   0	 0 | 0.004   0.001   0.004   | -----  0.015   -----  | -----   0.154  -----  
----------------------------------------------------------------------------------------------------
-
-Of the simple sorting methods, we can conclude that Selection sort is the most consistent, no matter if the list is random, already
-sorted or in reversed order. Bubble and insertion sorting methods are simply not sutitable for large data sets because it
-continues to call the functions recursively until the list is sorted. Unlike selection sort, they consume lots of memory because of
-the number of if statements the program must iterate through to reach its final objective; of being sorted. The reason to why Selection
-sort is the most consistant of the simple sorting methods is because it constantly selects the minimum number in the list and
-recursvely sets the list in order; again, without modifying the list after every comparison. Accoring to the collected data,
-we can also conclude that all of the sorting methods are as effecient as one another when taking a small list as a
-parameter; However,we can also conclude that the selection sort is most effecient and useful when trying to sort a large list.
-Another reason to why it is the fastest is because it uses an exponential O(n) type.
-
-Of the observed data, I am unable to indentify how efficient (or unefficient) the quick sorting is for the sorted trial and for the reverse
-trial,for both, the list containing 1000 numbers and the list containing 10,000 numbers. This is because the program goes into a deep recursion.
-We are, however, able to conclude that merge sort is extremely efficient because it uses the logerithmic O(n) type, making
-it extremely quick and consistent when sorting.
-'''
-
