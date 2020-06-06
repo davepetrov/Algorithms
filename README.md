@@ -1,9 +1,9 @@
 ## Results
-
-             linear_1  linear_2   linear_3 sentinel   binary_recursive binary    binary_iterative binary            list.index()
-#beginning   0 ms            0 ms            0 ms                              6302 ms                                       280 ms                                                             0.0
-#middle        1622 ms      748 ms        827 ms                          401 ms                                        269 ms                                                              0.0
-#end             3176 ms      1481 ms     1802 ms                         12492 ms                                    284 ms                                                              0.0
+| linear_1 | linear_2 | linear_3 sentinel | binary_recursive binary | binary_iterative binary | list.index() |
+| --- | | --- | | --- | | --- | | --- | | --- | 
+| beginning | 0 ms | 0 ms |  0 ms | 6302 ms | 280 ms | 0.0 |
+| middle | 1622 ms | 748 ms | 827 ms | 401 ms | 269 ms | 0.0 |
+| end | 3176 ms | 1481 ms | 1802 ms | 12492 ms | 284 ms | 0.0 |
 
 
 n                           #      10      |               100                 |            1,000            |         10,000         
