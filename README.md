@@ -1,19 +1,32 @@
+# Searching and sorting Algorithms
+- Linear search: O(n)
+- Binary search:  O(n)
+- Bubble sort:  O(n^2)
+- Selection sort: O(n^2)
+- Insertion sort: O(n^2)
+- Merge sort: O(nlogn)
+- Quick sort: O(nlogn) -> O(n^2)
+---
 ## Results
-| linear_1 | linear_2 | linear_3 sentinel | binary_recursive binary | binary_iterative binary | list.index() |
-| --- | | --- | | --- | | --- | | --- | | --- | 
-| beginning | 0 ms | 0 ms |  0 ms | 6302 ms | 280 ms | 0.0 |
-| middle | 1622 ms | 748 ms | 827 ms | 401 ms | 269 ms | 0.0 |
-| end | 3176 ms | 1481 ms | 1802 ms | 12492 ms | 284 ms | 0.0 |
+
+|   | linear_1 | linear_2 | linear_3 sentinel | binary_recursive binary | binary_iterative binary | list.index() |
+| --- | --- | --- | --- | --- | --- | --- | 
+| **beginning** | 0 ms | 0 ms |  0 ms | 6302 ms | 280 ms | 0.0 |
+| **middle** | 1622 ms | 748 ms | 827 ms | 401 ms | 269 ms | 0.0 |
+| **end** | 3176 ms | 1481 ms | 1802 ms | 12492 ms | 284 ms | 0.0 |
 
 
-n                           #      10      |               100                 |            1,000            |         10,000         
-Bubble Sort          # 0   0     0 | 0.002   0.002   0.004   | 0.17   0.32    0.43      | 18.00   33     47     
-Selection sort       # 0   0     0 | 0.001   0.001   0.002   | 0.11   0.15    0.12      | 10.30   10.8   11.4   
-insertion sort        # 0   0     0 | 0.002   0.003   0.004   | 0.198  0.30    0.411   | 20.1    30.2   44.7   
-Merge sort           # 0    0     0 | 0.001   0.002   0.001   | 0.013  0.017   0.014  | 0.144   0.188  0.142  
-Quick sort            # 0    0     0 | 0.004   0.001   0.004   | -----    0.015   -----    | -----   0.154  -----  
+|             |     n = 10      |       n=100           |       n=1,000     |    n=10,000     |
+| --- | --- | --- | --- | --- |
+| **Bubble Sort**        | 0   0     0 | 0.002   0.002   0.004   | 0.17   0.32    0.43      | 18.00   33     47     |
+| **Selection sort**       | 0   0     0 | 0.001   0.001   0.002   | 0.11   0.15    0.12      | 10.30   10.8   11.4   |
+| **insertion sort**        | 0   0     0 | 0.002   0.003   0.004   | 0.198  0.30    0.411   | 20.1    30.2   44.7   |
+| **Merge sort**           | 0    0     0 | 0.001   0.002   0.001   | 0.013  0.017   0.014  | 0.144   0.188  0.142 |  
+| **Quick sort**            | 0    0     0 | 0.004   0.001   0.004   | -----    0.015   -----    | -----   0.154  -----  |
 
-## Conclusions:
+*Results may vary depending on your system. Algorithm complexities will remain the same and are implementation-independent*
+
+## Conclusions
 
 Binary-iterative search is the most efficient, taking less time and less memory than all the other options. The reason recrusion is not too effective, in this case, is because it costs quite the space, constantly recalling the function and redefining variables for every stack call until we get the final result were looking for. By the results, we conclude that the linear search methods can take a lot of time if the value is far into the list because it compares the elements one-by-one,  linearly from the first index. The best case is if the value is at the begining of the list with a complexity of O(1), trivially. Iterative Binary searches  are more efficient because they continuesly splits the list in half until the item in the middle is equal to the searched value.
 
