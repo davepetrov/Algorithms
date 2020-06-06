@@ -163,20 +163,3 @@ if __name__ == '__main__':
     import doctest
     doctest.testmod()
 
-#----------------------------------------------------------------------------------------------------------------------------------------
-#                linear_1	linear_2    linear_3 sentinel	    binary_recursive binary	binary_iterative binary	    list.index()
-#beginning	0 ms	        0 ms	    0 ms	            6302 ms	                280 ms	                    0.0
-#middle	        1622 ms	        748 ms	    827 ms	            401 ms	                269 ms	                    0.0
-#end 	        3176 ms	        1481 ms	    1802 ms	            12492 ms	                284 ms	                    0.0
-#----------------------------------------------------------------------------------------------------------------------------------------
-
-#Conclusions:
-
-#By the looks of the results, a binary-iterative search is the most efficient, taking less time and less memory than all the other options.
-#The reason recrusion is not too effective, in this case, is because it costs space, constantly recalling the function and redefining variables until we get the final result were looking for
-#Of the three linear searches, the for-loop method is the most efficient because of how simple the code is and because it continues the loop until it reaches the final result
-#Unlike this method, the the first and third methods consume slightly more memory because they both have variables to declare constantly, and compare with the value. We
-#can conclude the the linear search methods can take a lot of time if the value is far into the list because it compares the elements one-by-one. The best case is if the
-#value is at the begining of the list. Iterative Binary searches are more efficient because it continuesly splits the list in half until the item in the middle is equal to the searched value.
-#It also has consistent delay no matter if the value is at teh begiining, middle or end.
-
